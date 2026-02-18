@@ -1,11 +1,11 @@
 # FC_RISC-V RTL
 
-RISC-V 5-stage pipeline core with an integrated NN (matrix-multiply) accelerator. This repository only contains RTL under `RTL/`.
+RISC-V 5-stage pipeline core with an integrated NN (matrix-multiply) accelerator.
 
 This project was developed as part of the Kwangwoon University AI Semiconductor Design Project.
 
 ## Top-Level
-- `RTL/RISC-V/RISC_V.v` is the top module.
+- `RISC_V.v` is the top module.
 - Pipeline: IF / ID / EXE / MEM / WB with hazard interlock and data forwarding.
 - Custom NN instruction opcode: `OP_NN = 7'b0001011` (see `RTL/RISC-V/ID/Control_Unit.v`).
 
